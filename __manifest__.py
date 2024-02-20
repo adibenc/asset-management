@@ -14,7 +14,7 @@ Self asset management for dev
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
+    'category': 'Administration',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
@@ -22,7 +22,7 @@ Self asset management for dev
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
     ],
@@ -30,5 +30,6 @@ Self asset management for dev
     'demo': [
         'demo/demo.xml',
     ],
+	'application': True,
 }
 
