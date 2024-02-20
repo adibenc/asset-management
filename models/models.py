@@ -7,7 +7,7 @@ class Asset1(models.Model):
     _description = 'asset_management.asset1'
 
     name = fields.Char()
-    value = fields.Integer()
+    value = fields.Integer(help="just help value")
     value2 = fields.Float(compute="_value_pc", store=True)
     description = fields.Text()
 
